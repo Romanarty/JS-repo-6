@@ -1,1 +1,1 @@
-# JS-repo-7
+# goit-js-hw-07
