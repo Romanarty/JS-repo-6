@@ -12,3 +12,13 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+
+ // Task-3
+const img = [];
+const Item = document.createElement('li');
+const Img = document.createElement('img');
+Item.appendChild(Img)
+ 
+Item.insertAdjacentHTML('afterbegin', 'img');
+console.log(Item)
