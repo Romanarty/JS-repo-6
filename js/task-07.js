@@ -8,21 +8,13 @@
 // <input id="font-size-control" type="range" />
 // <br />
 // <span id="text">Абракадабра!</span>
-
  
-const inputLength = validationInput.dataset.size;
-const stylefontSize = document.querySelector('#stylefontSize');
 
-validationInput.addEventListener('change', controlOfValidation);
 
-function controlOfValidation(event) {
-    console.log(event.currentTarget.value);
-    if (event.currentTarget.value === stylefontSize.) {
-    validationInput.classList.add('valid');
-    validationInput.classList.remove('invalid'); }
-    else
-    {
-    validationInput.classList.remove('valid');
-    validationInput.classList.add('invalid');
-  }
-    }
+const input = document.getElementById('font-size-control');
+const span = document.getElementById('text');
+input.addEventListener('input', handleInputRange);
+function handleInputRange(event) {
+    span.style.fontSize = event.currentTarget.value + "px";
+}
+    

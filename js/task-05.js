@@ -1,14 +1,19 @@
 // Task-5
-const refs = {
-    input: document.querySelector('.js-input'),
-    nameLabel: document.querySelector('.js-button > span'),
-    checkbox: document.querySelector('.js-license'),
-    btn: document.querySelector('.js-button'),
-};
-refs.input.addEventListener('focus', onInputFocus);
-function onInputFocus() { console.log('Инпут получил фокус') };
-refs.input.addEventListener('input', onInputChange);
-function onInputChange(span ) {
-    if (input===span ) {console.log('CurrentTarget.value') }; 
-    else (input === null) { console.log('незнакомец') };
-};
+// Напиши скрипт который, при наборе текста в инпуте input#name - input(событие input),
+//     подставляет его текущее значение в span#name - output.Если инпут пустой, в спане
+// должна отображаться строка 'незнакомец'.
+
+// <input type="text" placeholder="Ваше имя?" id="name-input" />
+// <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
+ 
+
+
+const input = document.querySelector('name-input');
+const output = document.querySelector('name-output');
+
+function onInputChange(output) {
+    if (input === output) { 'CurrentTarget.value' };
+    if (input === null) {'незнакомец' };
+
+}
+ 
